@@ -1,0 +1,108 @@
+.primaryColor {
+   background-color: #673BD0;
+}
+* {
+   color: rgb(197, 197, 197);
+}
+.allPosts::-webkit-scrollbar {
+   display: none;
+}
+.loadingDiv{
+   animation: loading 0.8s alternate infinite;
+   opacity: 0.8;
+}
+.createPostBtn{
+   display: none;
+}
+@keyframes loading {
+   100% {
+      opacity: 1;
+   }
+}
+.ri-close-line{
+   display: none;
+}
+
+
+@media (max-width : 600px) {
+   .left-part, .right-part {
+      position: absolute;
+      width: 100%;
+      display: none;
+   }
+   .mainContainer{
+      padding: 0px;
+   }
+   .middle-part {
+      width: 100%;
+   }
+   .createPostBtn{
+      display: flex;
+   }
+   .signupForm{
+      flex-direction: column-reverse;
+   }
+   .signupFormWrapper{
+      height: 100vh;
+   }
+   .signupImageSide {
+      width: 100%;
+      display: none;
+   }
+   .signupImageSide img {
+      height: 400px;
+   }
+   .signupFormSide {
+      width: 100%;
+   }
+   .signupForm input {
+      width: 100%;
+   }
+   .signupFormTitle{
+      font-size: 20px;
+      line-height: 20px;
+      text-align: center;
+   }
+   .signupFormHeading {
+      font-size: 20px;
+   }
+   .formWrapper{
+      padding: 10px;
+      padding-left: 20px;
+   }
+  
+   .loginForm{
+      flex-direction: column-reverse;
+      display: flex;
+      width: 100%;
+   }
+   .loginFormimageSide{
+      display: none;
+   }
+   .loginFormSide{
+      width: 100%;
+   }
+   .loginFormSide input {
+      width: 100%;
+   }
+   .right-part{
+      display: flex;
+      background-color: rgb(0, 0, 0);
+      height: auto;
+      bottom: 0;
+      overflow: scroll;
+      border-radius: 30px 30px 0px 0px;
+      border: 1px solid #474747;
+      transition: 0.3s;
+      position: absolute;
+   }
+   .mainContainer  {
+      overflow: hidden;
+   }
+   .createPostbox {
+      bottom: -100%;
+   }
+   .ri-close-line{
+      display: block;
+   }
+}
